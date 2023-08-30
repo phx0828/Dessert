@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetaste 購物車</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c0315309b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container py-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">
+                <img src="img/logo-all-dark.svg" class="d-none d-md-block" alt="Sweetaste Logo" height="40px">
+                <img src="img/logotype-lg-dark.svg" class="d-block d-md-none" alt="Sweetaste Logo" height="18px"></a>
+            <a class="nav-link mx-3 order-md-1 active" href="cart.html">
+                <i class="fa-solid fa-cart-shopping" style="color: #3F5D45;"></i>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto navbar-fontsize">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="home.html">首頁</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="products.html">甜點</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cart-content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 cart-title p-3 mb-4">
+                            <div class="text-center">
+                                您的購物車
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row d-flex">
+                                <div class="col-md-2 col-8 d-flex">
+                                    <div class="bg-cover" style="background-image: url('https://bit.ly/2QvsT63');">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-4 d-flex justify-content-between">
+                                    <div class="row d-flex">
+                                        <div class="col-md-8 col-12 d-flex">
+                                            <div class="d-flex flex-column justify-content-center product-info">
+                                                <span>焦糖馬卡龍</span>
+                                                <span>NT $450</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-12 d-flex">
+                                            <div class="input-group align-items-center product-info">
+                                                <button class="btn listgroup rounded-0" type="button">-</button>
+                                                <input type="text"
+                                                    class="form-control listgroup-input listgroup text-center"
+                                                    value="2">
+                                                <button class="btn listgroup rounded-0" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                                <div class="col-md-3 d-flex justify-content-end">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex align-items-center">
+                                            <span class="mr-auto product-price-total">NT $900</span>
+                                            <a href="#" class="btn">
+                                                <i class="fa-solid fa-trash" style="color: #45494f;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row d-flex">
+                                <div class="col-md-2 col-8 d-flex">
+                                    <div class="bg-cover" style="background-image: url('https://bit.ly/2QvsT63');">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-4 d-flex justify-content-between">
+                                    <div class="row d-flex">
+                                        <div class="col-md-8 col-12 d-flex">
+                                            <div class="d-flex flex-column justify-content-center product-info">
+                                                <span>焦糖馬卡龍</span>
+                                                <span>NT $450</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-12 d-flex">
+                                            <div class="input-group align-items-center product-info">
+                                                <button class="btn listgroup rounded-0" type="button">-</button>
+                                                <input type="text"
+                                                    class="form-control listgroup-input listgroup text-center"
+                                                    value="2">
+                                                <button class="btn listgroup rounded-0" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                                <div class="col-md-3 d-flex justify-content-end">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex align-items-center">
+                                            <span class="mr-auto product-price-total">NT $900</span>
+                                            <a href="#" class="btn">
+                                                <i class="fa-solid fa-trash" style="color: #45494f;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row d-flex">
+                                <div class="col-md-2 col-8 d-flex">
+                                    <div class="bg-cover" style="background-image: url('https://bit.ly/2QvsT63');">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-4 d-flex justify-content-between">
+                                    <div class="row d-flex">
+                                        <div class="col-md-8 col-12 d-flex">
+                                            <div class="d-flex flex-column justify-content-center product-info">
+                                                <span>焦糖馬卡龍</span>
+                                                <span>NT $450</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-12 d-flex">
+                                            <div class="input-group align-items-center product-info">
+                                                <button class="btn listgroup rounded-0" type="button">-</button>
+                                                <input type="text"
+                                                    class="form-control listgroup-input listgroup text-center"
+                                                    value="2">
+                                                <button class="btn listgroup rounded-0" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                                <div class="col-md-3 d-flex justify-content-end">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex align-items-center">
+                                            <span class="mr-auto product-price-total">NT $900</span>
+                                            <a href="#" class="btn">
+                                                <i class="fa-solid fa-trash" style="color: #45494f;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="d-block d-md-none mt-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="order-block p-3">
+                        <div class="col-12 py-3">
+                            <p class="text-center h2" style="font-size: 20px; font-weight: bold;">訂單摘要</p>
+                            <hr class="hr">
+                        </div>
+                        <div class="col-12 d-flex justify-content-between p-2 pt-0">
+                            <span>小計</span>
+                            <span>NT $2700</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between p-2">
+                            <span>運費</span>
+                            <span>NT $300</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between p-2">
+                            <span style="font-size: 20px; font-weight: bold;">總計</span>
+                            <span style="font-size: 20px; font-weight: bold;">NT $3000</span>
+                        </div>
+                    </div>
+                    <div class="g-0 bill-block">
+                        <a href="checkout1.html" class="btn btn-block rounded-0 bill-block-btn"
+                            style="font-size: 20px;">結帳</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5">
+        <section style="background-color: #3F5D45;">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-5 col-12 d-flex align-items-center justify-content-center">
+                        <img src="img/logo-light.svg" width="40" class="mr-2">
+                        <span style="font-size: 24px; color: #EAF0ED;">訂閱你我甜蜜郵件</span>
+                    </div>
+                    <div class="col-md-5 col-12 d-flex">
+                        <div class="input-group justify-content-center">
+                            <span class="input-group-text rounded-0" id="basic-addon1"
+                                style="background-color:white; border-right:0">
+                                <i class="fa-solid fa-envelope" style="color: #3F5D45;"></i>
+                            </span>
+                            <input type="text" class="form-control rounded-0" placeholder="甜蜜聯絡信箱" aria-label="Username"
+                                aria-describedby="basic-addon1"
+                                style="background-color:white; border-left:0; max-width: 380px; height: 56px;">
+                            <button class="btn btn-warning rounded-0" type="button" id="button-addon2"><i
+                                    class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #EAF0ED;">
+            <div class="container">
+                <div class="row py-5 justify-content-start">
+                    <div class="col-6 d-flex justify-content-between flex-column">
+                        <div><img src="img/logotype-lg-dark.svg" width="171"></div>
+                        <div class="d-flex flex-column footer-fontsize mt-3">
+                            <span>07-1234-5678</span>
+                            <span>sweetaste@email.com</span>
+                            <span>800 高雄市新興區幸福路 520 號</span>
+                        </div>
+                    </div>
+                    <div class="col-6 d-none d-md-block ">
+                        <div class="d-flex flex-row-reverse"><img src="img/sm-今天是個吃甜點的好日子.svg" height="218">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-4 justify-content-start">
+                    <div class="col-6">
+                        <a href="#" class="mr-1"><i class="fa-brands fa-square-instagram fa-2xl"
+                                style="color: #3F5D45;"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #3F5D45;"></i></a>
+                    </div>
+                    <div class="col-6 d-flex flex-row-reverse">
+                        <span class="d-none d-md-block footer-fontsize">© 2018 Sweetaste* All Rights Reserved</span>
+                    </div>
+                    <div class="d-block d-md-none mt-2 footer-fontsize">
+                        <span>© 2018 Sweetaste* All Rights Reserved</span>
+                    </div>
+                </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -52,11 +52,6 @@ input{
     align-items: center;
 }
 
-.btnn{
-    height: 56px;
-    width: 330px;
-}
-
 .connect-btn{
     background-color: white;
     --bs-btn-active-bg: rgb(233, 233, 233, .5);

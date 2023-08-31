@@ -22,7 +22,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-md">
         <div class="container py-4">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler ml-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,9 +30,9 @@
                 <img src="img/logo-all-dark.svg" class="d-none d-md-block" alt="Sweetaste Logo" height="40px">
                 <img src="img/logotype-lg-dark.svg" class="d-block d-md-none" alt="Sweetaste Logo" height="18px"></a>
             <a class="nav-link mx-3 order-md-1" href="cart.html">
-                <i class="fa-solid fa-cart-shopping" style="color: #3F5D45;"></i>
+                <i class="fa-solid fa-cart-shopping navbar-cart" style="color: #3F5D45;"></i>
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse navbar-list" id="navbarNav">
                 <ul class="navbar-nav ml-auto navbar-fontsize">
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="index.html">首頁</a>
@@ -49,7 +49,7 @@
     </nav>
 
     <!-- checkout content -->
-    <div class="container mt-5">
+    <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-6">
                 <div class="row">
@@ -58,11 +58,15 @@
                             <div class="col"><span class="page-title">發票</span></div>
                             <div class="col d-flex justify-content-between align-items-center progress-line"
                                 style="position: relative;">
-                                <div class="dot">
-                                    <div class="dot-active"></div>
+                                <div class="dot-complete">
+                                    <div class="dot-check" style="position: relative;">
+                                        <i class="fa-solid fa-check" style="color: #3F5D45;"></i>
+                                    </div>
                                 </div>
-                                <div class="dot">
-                                    <div class="dot-active"></div>
+                                <div class="dot-complete">
+                                    <div class="dot-check" style="position: relative;">
+                                        <i class="fa-solid fa-check" style="color: #3F5D45;"></i>
+                                    </div>
                                 </div>
                                 <div class="dot">
                                     <div class="dot-active"></div>
@@ -102,7 +106,7 @@
                         </div>
 
                     </div>
-                    <div class="g-0 nextstep-block mb-3">
+                    <div class="g-0 nextstep-block">
                         <a href="checkout_success.html" class="btn btn-block rounded-0 nextstep-block-btn"
                             style="font-size: 20px;">確認結帳</a>
                     </div>
@@ -184,7 +188,7 @@
     </div>
 
     <!-- footer -->
-    <footer  class="mt-5">
+    <footer>
         <section style="background-color: #3F5D45;">
             <div class="container py-5">
                 <div class="row d-flex justify-content-center">
@@ -199,7 +203,8 @@
                                 <i class="fa-solid fa-envelope" style="color: #3F5D45;"></i>
                             </span>
                             <input type="text" class="form-control rounded-0" placeholder="甜蜜聯絡信箱" aria-label="Username"
-                                aria-describedby="basic-addon1" style="background-color:white; border-left:0; max-width: 380px; height: 56px;">
+                                aria-describedby="basic-addon1"
+                                style="background-color:white; border-left:0; max-width: 380px; height: 56px;">
                             <button class="btn btn-warning rounded-0" type="button" id="button-addon2"><i
                                     class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
                         </div>

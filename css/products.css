@@ -11,6 +11,13 @@
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .navbar-list {
+        margin-top: 12px;
+    }
+}
+
+
 /* header */
 
 .header {
@@ -19,7 +26,20 @@
 
 .header-img {
     background-image: url('https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80');
-    height: 496px;
+}
+
+.header-text{
+    height: 328px;
+}
+
+@media (max-width: 768px){
+    .header {
+        height: 277px;
+    }
+    .header-text{
+        height: 218px;
+    }
+
 }
 
 /* content-list */
@@ -85,6 +105,28 @@
     justify-content: center;
     letter-spacing: 3px;
     color: white;
+}
+
+/*愛心標記*/
+
+.starred-icon {
+    opacity: 0;
+}
+
+input.ui-checkbox {
+    height: 0;
+    width: 0;
+}
+
+.ui-checkbox:checked+.starred-icon {
+    opacity: 1;
+}
+
+.starred-icon, .unstarred-icon {
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    cursor: pointer;
 }
 
 /* content-pagination */

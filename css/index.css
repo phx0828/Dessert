@@ -2,6 +2,10 @@
     margin-top: 100px;
 }
 
+.my-10 {
+    margin-top: 75px;
+}
+
 .bg-cover {
     background-size: cover;
     background-position: center center;
@@ -15,6 +19,16 @@
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .navbar-cart {
+        margin-right: 12px;
+    }
+
+    .navbar-list {
+        margin-top: 12px;
+    }
+}
+
 /* header */
 
 .header-img {
@@ -22,6 +36,15 @@
     background-size: cover;
     background-position: center center;
     height: 496px;
+}
+
+@media (max-width: 768px) {
+    .header-img {
+        background-image: url('https://bit.ly/2OhbMHr');
+        background-size: cover;
+        background-position: 55% center;
+        height: 496px;
+    }
 }
 
 .header-btn {
@@ -58,24 +81,37 @@
 /* content */
 
 .content-picture {
-    max-height: 420px;
+    min-height: 420px;
     background-color: #EAF0ED;
 }
 
 .vertical-content {
-    margin-top: 10px;
-    max-height: 460px;
-    line-height: 1.5;
+    padding: 32px;
     color: #8DA291;
 }
+
 
 @media (min-width: 768px) {
     .vertical-content {
         padding: 32px;
-        max-height: 400px;
-        line-height: 2;
+        max-height: 420px;
+        line-height: 3;
         color: #8DA291;
         writing-mode: vertical-rl;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .vertical-content {
+        padding: 30px;
+        margin-bottom: 0;
+        line-height: 2;
+        color: #8DA291;
+    }
+
+    .vertical-content p {
+        margin-bottom: 0;
     }
 }
 
@@ -107,20 +143,20 @@
 
 /* 愛心標記 */
 
-.starred-icon{
+.starred-icon {
     opacity: 0;
 }
 
-input.ui-checkbox{
+input.ui-checkbox {
     height: 0;
     width: 0;
 }
 
-.ui-checkbox:checked + .starred-icon{
+.ui-checkbox:checked+.starred-icon {
     opacity: 1;
 }
 
-.starred-icon, .unstarred-icon{
+.starred-icon, .unstarred-icon {
     position: absolute;
     right: 20px;
     top: 23px;

@@ -22,7 +22,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-md">
         <div class="container py-4">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler ml-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,9 +30,9 @@
                 <img src="img/logo-all-dark.svg" class="d-none d-md-block" alt="Sweetaste Logo" height="40px">
                 <img src="img/logotype-lg-dark.svg" class="d-block d-md-none" alt="Sweetaste Logo" height="18px"></a>
             <a class="nav-link mx-3 order-md-1" href="cart.html">
-                <i class="fa-solid fa-cart-shopping" style="color: #3F5D45;"></i>
+                <i class="fa-solid fa-cart-shopping navbar-cart" style="color: #3F5D45;"></i>
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse navbar-list" id="navbarNav">
                 <ul class="navbar-nav ml-auto navbar-fontsize">
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="index.html">首頁</a>
@@ -49,18 +49,18 @@
     </nav>
 
     <!-- header -->
-    <div class=" container">
-        <div class="header mb-5">
+    <div class=" container g-0">
+        <div class="header">
             <div class="bg-cover header-img d-flex flex-row-reverse">
-                <img class="m-5" src="img/lg-想吃甜點是不需要理由的.svg" height="328">
+                <img class="m-5 header-text" src="img/lg-想吃甜點是不需要理由的.svg">
             </div>
         </div>
     </div>
 
     <!-- content -->
-    <div class="container">
+    <div class="container g-0">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 g-0">
                 <div>
                     <h2 class="content-list-title">甜點類別</h2>
                     <div class="list-group rounded-0">
@@ -72,63 +72,84 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row flex-wrap">
-                    <div class="col-md-6 py-3">
-                        <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
-                            <div class="product-card-tag">
-                                <span>精選折扣</span>
-                            </div>
-                            <div class="bg-cover"
-                                style="background-image: url('https://bit.ly/2R5tqwD'); height: 315px;"></div>
-                            <div class="d-flex" style="height: 60px;">
-                                <div class="col product-card-fontsize"
-                                    style="border-right: 1px solid rgba(181, 181, 181, 0.3);">焦糖瑪卡龍</div>
-                                <div class="col product-card-fontsize" style="font-weight: bold;">NT $450</div>
-                            </div>
-                            <div class="card-footer p-0" style="background: #EAF0ED;">
-                                <a href="#" class="btn btn-lg btn-block"
-                                    style="font-size: 24px; color: #3F5D45;">加入購物車</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 py-3">
-                        <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
-                            <div class="product-card-tag">
-                                <span>精選折扣</span>
-                            </div>
-                            <div class="bg-cover"
-                                style="background-image: url('https://bit.ly/2zBDAxX'); height: 315px;"></div>
-                            <div class="d-flex" style="height: 60px;">
-                                <div class="col product-card-fontsize"
-                                    style="border-right: 1px solid rgba(181, 181, 181, 0.3);">草莓蛋糕</div>
-                                <div class="col product-card-fontsize" style="font-weight: bold;">NT $450</div>
-                            </div>
-                            <div class="card-footer p-0" style="background: #EAF0ED;">
-                                <a href="#" class="btn btn-lg btn-block"
-                                    style="font-size: 24px; color: #3F5D45;">加入購物車</a>
+            <div class="col-md-8 ff">
+                <div class="container">
+                    <div class="row flex-wrap">
+                        <div class="col-md-6 py-3">
+                            <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
+                                <div class="product-card-tag">
+                                    <span>精選折扣</span>
+                                </div>
+                                <div class="bg-cover"
+                                    style="background-image: url('https://bit.ly/2R5tqwD'); height: 315px;">
+                                    <label>
+                                        <input type="checkbox" class="ui-checkbox">
+                                        <i class="fa-solid fa-heart fa-lg starred-icon" style="color: #3F5D45;"></i>
+                                        <i class="fa-regular fa-heart fa-lg unstarred-icon" style="color: #3F5D45;"></i>
+                                    </label>
+                                </div>
+                                <div class="d-flex" style="height: 60px;">
+                                    <div class="col product-card-fontsize"
+                                        style="border-right: 1px solid rgba(181, 181, 181, 0.3);">焦糖瑪卡龍</div>
+                                    <div class="col product-card-fontsize" style="font-weight: bold;">NT $450</div>
+                                </div>
+                                <div class="card-footer p-0" style="background: #EAF0ED;">
+                                    <a href="#" class="btn btn-lg btn-block"
+                                        style="font-size: 24px; color: #3F5D45;">加入購物車</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 py-3">
-                        <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
-                            <div class="product-card-tag">
-                                <span>精選折扣</span>
+                        <div class="col-md-6 py-3">
+                            <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
+                                <div class="product-card-tag">
+                                    <span>精選折扣</span>
+                                </div>
+                                <div class="bg-cover"
+                                    style="background-image: url('https://bit.ly/2zBDAxX'); height: 315px;">
+                                    <label>
+                                        <input type="checkbox" class="ui-checkbox">
+                                        <i class="fa-solid fa-heart fa-lg starred-icon" style="color: #3F5D45;"></i>
+                                        <i class="fa-regular fa-heart fa-lg unstarred-icon" style="color: #3F5D45;"></i>
+                                    </label>
+                                </div>
+                                <div class="d-flex" style="height: 60px;">
+                                    <div class="col product-card-fontsize"
+                                        style="border-right: 1px solid rgba(181, 181, 181, 0.3);">草莓蛋糕</div>
+                                    <div class="col product-card-fontsize" style="font-weight: bold;">NT $450</div>
+                                </div>
+                                <div class="card-footer p-0" style="background: #EAF0ED;">
+                                    <a href="#" class="btn btn-lg btn-block"
+                                        style="font-size: 24px; color: #3F5D45;">加入購物車</a>
+                                </div>
                             </div>
-                            <div class="bg-cover"
-                                style="background-image: url('https://bit.ly/2QiWeQW'); height: 315px;"></div>
-                            <div class="d-flex" style="height: 60px; ">
-                                <div class="col product-card-fontsize"
-                                    style="border-right: 1px solid rgba(181, 181, 181, 0.3);">健康奶酪</div>
-                                <div class="col product-card-fontsize" style="font-weight: bold;">NT$ 500</div>
-                            </div>
-                            <div class="card-footer p-0" style="background: #EAF0ED;">
-                                <a href="#" class="btn btn-lg btn-block"
-                                    style="font-size: 24px; color: #3F5D45;">加入購物車</a>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <div class="card rounded-0" style="border: 1px solid rgba(181, 181, 181, 0.2);">
+                                <div class="product-card-tag">
+                                    <span>精選折扣</span>
+                                </div>
+                                <div class="bg-cover"
+                                    style="background-image: url('https://bit.ly/2QiWeQW'); height: 315px;">
+                                    <label>
+                                        <input type="checkbox" class="ui-checkbox">
+                                        <i class="fa-solid fa-heart fa-lg starred-icon" style="color: #3F5D45;"></i>
+                                        <i class="fa-regular fa-heart fa-lg unstarred-icon" style="color: #3F5D45;"></i>
+                                    </label>
+                                </div>
+                                <div class="d-flex" style="height: 60px; ">
+                                    <div class="col product-card-fontsize"
+                                        style="border-right: 1px solid rgba(181, 181, 181, 0.3);">健康奶酪</div>
+                                    <div class="col product-card-fontsize" style="font-weight: bold;">NT$ 500</div>
+                                </div>
+                                <div class="card-footer p-0" style="background: #EAF0ED;">
+                                    <a href="#" class="btn btn-lg btn-block"
+                                        style="font-size: 24px; color: #3F5D45;">加入購物車</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
 
                 <!-- Pagination -->

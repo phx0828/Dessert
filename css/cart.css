@@ -13,6 +13,23 @@
     font-weight: 600;
 }
 
+@media (min-width:768px) {
+    .navbar-cart {
+        margin: 0 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar-cart {
+        margin-right: 16px;
+    }
+
+    .navbar-list {
+        margin-top: 16px;
+    }
+}
+
 /* cart */
 
 @media (max-width: 769px) {

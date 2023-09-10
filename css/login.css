@@ -23,18 +23,6 @@
     }
 }
 
-.row-size {
-    padding: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-}
-
-@media (max-width: 992px) {
-    .row-size {
-        padding: 0;
-    }
-}
-
 /* content */
 
 h1 {
@@ -106,6 +94,18 @@ input {
 .form-check-input:checked {
     background-color: #3F5D45;
     border-color: white;
+}
+
+.row-size {
+    padding: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+@media (max-width: 992px) {
+    .row-size {
+        padding: 0;
+    }
 }
 
 /* footer */
